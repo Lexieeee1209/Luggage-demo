@@ -53,18 +53,22 @@ button:hover {
   background-color: #a81422;
 }
 
-.secondary-btn {
+.scan-btn {
   background-color: #555;
-}
-
-.secondary-btn:hover {
-  background-color: #333;
 }
 
 .loading {
   text-align: center;
   font-size: 1.1em;
   color: #555;
+  margin-top: 1em;
+}
+
+.message {
+  text-align: center;
+  color: #c81a29;
+  font-weight: bold;
+  margin: 1em 0;
 }
 
 .result-section {
@@ -89,4 +93,14 @@ footer {
   padding: 1em;
   font-size: 0.9em;
   color: #777;
+}
+
+.scanner-section {
+  text-align: center;
+  margin: 1em auto;
+}
+
+.close-scan {
+  background-color: #999;
+  margin-top: 1em;
 }
