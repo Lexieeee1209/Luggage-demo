@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "flight": { "iata": "MU5126", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-10-31T18:30:00" },
+      "status": "计划中",
+      "baggage": "正在装载"
+    },
+    {
+      "flight": { "iata": "MU5125", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-10-31T14:20:00" },
+      "status": "已起飞",
+      "baggage": "托运完成"
+    },
+    {
+      "flight": { "iata": "MU5124", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-10-31T09:00:00" },
+      "status": "到达",
+      "baggage": "可提取"
+    },
+    {
+      "flight": { "iata": "MU5130", "departure": "上海虹桥", "arrival": "深圳宝安", "scheduled": "2025-10-31T16:00:00" },
+      "status": "延误",
+      "baggage": "等待装载"
+    },
+    {
+      "flight": { "iata": "MU5155", "departure": "上海虹桥", "arrival": "广州白云", "scheduled": "2025-10-31T19:40:00" },
+      "status": "计划中",
+      "baggage": "未托运"
+    },
+    {
+      "flight": { "iata": "MU5180", "departure": "上海虹桥", "arrival": "成都天府", "scheduled": "2025-10-31T11:20:00" },
+      "status": "已起飞",
+      "baggage": "装载中"
+    },
+    {
+      "flight": { "iata": "MU5301", "departure": "上海虹桥", "arrival": "昆明长水", "scheduled": "2025-10-31T13:00:00" },
+      "status": "登机中",
+      "baggage": "部分托运"
+    },
+    {
+      "flight": { "iata": "MU5400", "departure": "上海虹桥", "arrival": "青岛胶东", "scheduled": "2025-10-31T17:00:00" },
+      "status": "取消",
+      "baggage": "托运行李退回"
+    },
+    {
+      "flight": { "iata": "MU5508", "departure": "上海虹桥", "arrival": "厦门高崎", "scheduled": "2025-10-31T20:00:00" },
+      "status": "计划中",
+      "baggage": "未托运"
+    },
+    {
+      "flight": { "iata": "MU5588", "departure": "上海虹桥", "arrival": "武汉天河", "scheduled": "2025-10-31T12:00:00" },
+      "status": "到达",
+      "baggage": "全部提取"
+    }
+  ]
+}

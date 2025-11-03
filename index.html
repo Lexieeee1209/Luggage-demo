@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>东航航班与行李动态查询</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 引入扫码库（在线CDN） -->
+  <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>航班与行李动态查询</h1>
+    <p id="current-time"></p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" id="flight-input" placeholder="请输入航班号 (如 MU5126 或 5126)">
+      <input type="date" id="date-input">
+      <button id="search-btn">查询</button>
+      <button id="scan-btn" class="secondary-btn">扫码登机牌查询</button>
+    </section>
+
+    <div id="scanner" style="display:none; width:90%; max-width:400px; margin:auto;"></div>
+    <div id="loading" class="loading">查询中，请稍候...</div>
+
+    <section id="result-section" class="result-section" style="display:none;">
+      <h2>航班信息</h2>
+      <div id="flight-info"></div>
+
+      <h2>行李动态</h2>
+      <div id="baggage-info"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 中国东方航空</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #e6f0ff, #ffffff);
+  color: #333;
+}
+
+header {
+  background-color: #c81a29;
+  color: #fff;
+  text-align: center;
+  padding: 1.2em 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4em;
+}
+
+#current-time {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+  gap: 1em;
+}
+
+.search-section input, button {
+  width: 80%;
+  max-width: 400px;
+  padding: 0.8em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: #c81a29;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #a81422;
+}
+
+.secondary-btn {
+  background-color: #555;
+}
+
+.secondary-btn:hover {
+  background-color: #333;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.result-section {
+  width: 85%;
+  max-width: 600px;
+  margin: 1em auto 3em;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.2em;
+}
+
+.result-section h2 {
+  border-left: 4px solid #c81a29;
+  padding-left: 0.5em;
+  margin-bottom: 0.6em;
+}
+
+footer {
+  background: #f7f7f7;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: #777;
+}
