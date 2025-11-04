@@ -1,253 +1,253 @@
 {
   "data": [
     {
-      "flight": { "iata": "MU5126", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T18:30:00" },
+      "flight": { "iata": "MU5126", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T18:30:00+08:00" },
       "status": "计划中 (4号)",
       "baggage": "正在装载"
     },
     {
-      "flight": { "iata": "MU5126", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-05T19:00:00" },
+      "flight": { "iata": "MU5126", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-05T19:00:00+08:00" },
       "status": "计划中 (5号)",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5126", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-06T18:30:00" },
+      "flight": { "iata": "MU5126", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-06T18:30:00+08:00" },
       "status": "延误 (6号)",
       "baggage": "等待装载"
     },
     {
-      "flight": { "iata": "MU5125", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T14:20:00" },
+      "flight": { "iata": "MU5125", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T14:20:00+08:00" },
       "status": "已起飞",
       "baggage": "托运完成"
     },
     {
-      "flight": { "iata": "MU5124", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-05T09:00:00" },
+      "flight": { "iata": "MU5124", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-05T09:00:00+08:00" },
       "status": "到达",
       "baggage": "可提取"
     },
     {
-      "flight": { "iata": "CA1832", "departure": "北京首都", "arrival": "上海虹桥", "scheduled": "2025-11-04T10:00:00" },
+      "flight": { "iata": "MU5162", "departure": "北京首都", "arrival": "上海虹桥", "scheduled": "2025-11-04T10:00:00+08:00" },
       "status": "到达 (虹桥)",
       "baggage": "可提取"
     },
     {
-      "flight": { "iata": "CA1832", "departure": "北京首都", "arrival": "上海虹桥", "scheduled": "2025-11-05T10:00:00" },
+      "flight": { "iata": "MU5162", "departure": "北京首都", "arrival": "上海虹桥", "scheduled": "2025-11-05T10:00:00+08:00" },
       "status": "计划中 (5号)",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5180", "departure": "上海浦东", "arrival": "成都天府", "scheduled": "2025-11-04T11:20:00" },
+      "flight": { "iata": "MU5180", "departure": "上海浦东", "arrival": "成都天府", "scheduled": "2025-11-04T11:20:00+08:00" },
       "status": "已起飞 (浦东出发)",
       "baggage": "装载中"
     },
     {
-      "flight": { "iata": "MU5180", "departure": "上海浦东", "arrival": "成都天府", "scheduled": "2025-11-05T11:20:00" },
+      "flight": { "iata": "MU5180", "departure": "上海浦东", "arrival": "成都天府", "scheduled": "2025-11-05T11:20:00+08:00" },
       "status": "计划中 (5号 浦东)",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "CZ3538", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "2025-11-04T17:00:00" },
+      "flight": { "iata": "MU5338", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "2025-11-04T17:00:00+08:00" },
       "status": "延误 (浦东到达)",
       "baggage": "等待装载"
     },
     {
-      "flight": { "iata": "CZ3538", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "2025-11-05T17:00:00" },
+      "flight": { "iata": "MU5338", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "2025-11-05T17:00:00+08:00" },
       "status": "计划中 (5号 浦东)",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5301", "departure": "上海虹桥", "arrival": "昆明长水", "scheduled": "2025-11-05T13:00:00" },
+      "flight": { "iata": "MU5301", "departure": "上海虹桥", "arrival": "昆明长水", "scheduled": "2025-11-05T13:00:00+08:00" },
       "status": "登机中",
       "baggage": "部分托运"
     },
     {
-      "flight": { "iata": "MU5508", "departure": "上海浦东", "arrival": "厦门高崎", "scheduled": "2025-11-05T20:00:00" },
+      "flight": { "iata": "MU5508", "departure": "上海浦东", "arrival": "厦门高崎", "scheduled": "2025-11-05T20:00:00+08:00" },
       "status": "计划中 (浦东出发)",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5588", "departure": "上海虹桥", "arrival": "武汉天河", "scheduled": "2025-11-04T12:00:00" },
+      "flight": { "iata": "MU5588", "departure": "上海虹桥", "arrival": "武汉天河", "scheduled": "2025-11-04T12:00:00+08:00" },
       "status": "到达",
       "baggage": "全部提取"
     },
     {
-      "flight": { "iata": "MU5588", "departure": "上海虹桥", "arrival": "武汉天河", "scheduled": "2025-11-05T12:00:00" },
+      "flight": { "iata": "MU5588", "departure": "上海虹桥", "arrival": "武汉天河", "scheduled": "2025-11-05T12:00:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "FM9331", "departure": "上海虹桥", "arrival": "广州白云", "scheduled": "2025-11-04T08:00:00" },
+      "flight": { "iata": "FM9331", "departure": "上海虹桥", "arrival": "广州白云", "scheduled": "2025-11-04T08:00:00+08:00" },
       "status": "已起飞",
       "baggage": "托运完成"
     },
     {
-      "flight": { "iata": "FM9332", "departure": "广州白云", "arrival": "上海虹桥", "scheduled": "2025-11-04T11:30:00" },
+      "flight": { "iata": "FM9332", "departure": "广州白云", "arrival": "上海虹桥", "scheduled": "2025-11-04T11:30:00+08:00" },
       "status": "到达",
       "baggage": "可提取"
     },
     {
-      "flight": { "iata": "MU5101", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T07:00:00" },
+      "flight": { "iata": "MU5101", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T07:00:00+08:00" },
       "status": "已起飞",
       "baggage": "托运完成"
     },
     {
-      "flight": { "iata": "MU5103", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T08:00:00" },
+      "flight": { "iata": "MU5103", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T08:00:00+08:00" },
       "status": "已起飞",
       "baggage": "托运完成"
     },
     {
-      "flight": { "iata": "MU5105", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T09:00:00" },
+      "flight": { "iata": "MU5105", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T09:00:00+08:00" },
       "status": "登机中",
       "baggage": "正在装载"
     },
     {
-      "flight": { "iata": "MU5105", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-05T09:00:00" },
+      "flight": { "iata": "MU5105", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-05T09:00:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5115", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T15:00:00" },
+      "flight": { "iata": "MU5115", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T15:00:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5117", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T16:00:00" },
+      "flight": { "iata": "MU5117", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T16:00:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5119", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T17:00:00" },
+      "flight": { "iata": "MU5119", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T17:00:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5121", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T19:00:00" },
+      "flight": { "iata": "MU5121", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-04T19:00:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5160", "departure": "北京首都", "arrival": "上海虹桥", "scheduled": "2025-11-04T21:00:00" },
+      "flight": { "iata": "MU5160", "departure": "北京首都", "arrival": "上海虹桥", "scheduled": "2025-11-04T21:00:00+08:00" },
       "status": "计划中 (虹桥到达)",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU564", "departure": "上海浦东", "arrival": "西安咸阳", "scheduled": "2025-11-04T14:55:00" },
+      "flight": { "iata": "MU5641", "departure": "上海浦东", "arrival": "西安咸阳", "scheduled": "2025-11-04T14:55:00+08:00" },
       "status": "已起飞 (浦东出发)",
       "baggage": "托运完成"
     },
     {
-      "flight": { "iata": "MU564", "departure": "上海浦东", "arrival": "西安咸阳", "scheduled": "2025-11-05T14:55:00" },
+      "flight": { "iata": "MU5641", "departure": "上海浦东", "arrival": "西安咸阳", "scheduled": "2025-11-05T14:55:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU563", "departure": "西安咸阳", "arrival": "上海浦东", "scheduled": "2025-11-04T18:20:00" },
+      "flight": { "iata": "MU5642", "departure": "西安咸阳", "arrival": "上海浦东", "scheduled": "2025-11-04T18:20:00+08:00" },
       "status": "计划中 (浦东到达)",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU563", "departure": "西安咸阳", "arrival": "上海浦东", "scheduled": "2025-11-05T18:20:00" },
+      "flight": { "iata": "MU5642", "departure": "西安咸阳", "arrival": "上海浦东", "scheduled": "2025-11-05T18:20:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU586", "departure": "上海浦东", "arrival": "昆明长水", "scheduled": "2025-11-04T17:10:00" },
+      "flight": { "iata": "MU5860", "departure": "上海浦东", "arrival": "昆明长水", "scheduled": "2025-11-04T17:10:00+08:00" },
       "status": "计划中 (浦东出发)",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU587", "departure": "昆明长水", "arrival": "上海浦东", "scheduled": "2025-11-04T13:30:00" },
+      "flight": { "iata": "MU5861", "departure": "昆明长水", "arrival": "上海浦东", "scheduled": "2025-11-04T13:30:00+08:00" },
       "status": "已起飞 (浦东到达)",
       "baggage": "托运完成"
     },
     {
-      "flight": { "iata": "MU535", "departure": "上海浦东", "arrival": "深圳宝安", "scheduled": "2025-11-04T08:20:00" },
+      "flight": { "iata": "MU5351", "departure": "上海浦东", "arrival": "深圳宝安", "scheduled": "2025-11-04T08:20:00+08:00" },
       "status": "已起飞",
       "baggage": "托运完成"
     },
     {
-      "flight": { "iata": "MU536", "departure": "深圳宝安", "arrival": "上海浦东", "scheduled": "2025-11-04T11:40:00" },
+      "flight": { "iata": "MU5352", "departure": "深圳宝安", "arrival": "上海浦东", "scheduled": "2025-11-04T11:40:00+08:00" },
       "status": "到达",
       "baggage": "可提取"
     },
     {
-      "flight": { "iata": "MU537", "departure": "上海浦东", "arrival": "深圳宝安", "scheduled": "2025-11-05T15:20:00" },
+      "flight": { "iata": "MU5357", "departure": "上海浦东", "arrival": "深圳宝安", "scheduled": "2025-11-05T15:20:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU538", "departure": "深圳宝安", "arrival": "上海浦东", "scheduled": "2025-11-05T18:40:00" },
+      "flight": { "iata": "MU5358", "departure": "深圳宝安", "arrival": "上海浦东", "scheduled": "2025-11-05T18:40:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU539", "departure": "上海浦东", "arrival": "深圳宝安", "scheduled": "2025-11-06T19:20:00" },
+      "flight": { "iata": "MU5359", "departure": "上海浦东", "arrival": "深圳宝安", "scheduled": "2025-11-06T19:20:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU540", "departure": "深圳宝安", "arrival": "上海浦东", "scheduled": "2025-11-06T22:40:00" },
+      "flight": { "iata": "MU5360", "departure": "深圳宝安", "arrival": "上海浦东", "scheduled": "2025-11-06T22:40:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU521", "departure": "上海浦东", "arrival": "广州白云", "scheduled": "2025-11-04T10:10:00" },
+      "flight": { "iata": "MU5211", "departure": "上海浦东", "arrival": "广州白云", "scheduled": "2025-11-04T10:10:00+08:00" },
       "status": "已起飞",
       "baggage": "托运完成"
     },
     {
-      "flight": { "iata": "MU522", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "2025-11-04T13:30:00" },
+      "flight": { "iata": "MU5212", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "2025-11-04T13:30:00+08:00" },
       "status": "到达",
       "baggage": "可提取"
     },
     {
-      "flight": { "iata": "MU523", "departure": "上海浦东", "arrival": "广州白云", "scheduled": "2025-11-05T16:10:00" },
+      "flight": { "iata": "MU5213", "departure": "上海浦东", "arrival": "广州白云", "scheduled": "2025-11-05T16:10:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU524", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "2025-11-05T19:30:00" },
+      "flight": { "iata": "MU5214", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "2025-11-05T19:30:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU6429", "departure": "上海虹桥", "arrival": "重庆江北", "scheduled": "2025-11-04T14:30:00" },
+      "flight": { "iata": "MU6429", "departure": "上海虹桥", "arrival": "重庆江北", "scheduled": "2025-11-04T14:30:00+08:00" },
       "status": "延误",
       "baggage": "等待装载"
     },
     {
-      "flight": { "iata": "MU6430", "departure": "重庆江北", "arrival": "上海虹桥", "scheduled": "2025-11-04T17:50:00" },
+      "flight": { "iata": "MU6430", "departure": "重庆江北", "arrival": "上海虹桥", "scheduled": "2025-11-04T17:50:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU6429", "departure": "上海虹桥", "arrival": "重庆江北", "scheduled": "2025-11-05T14:30:00" },
+      "flight": { "iata": "MU6429", "departure": "上海虹桥", "arrival": "重庆江北", "scheduled": "2025-11-05T14:30:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU6430", "departure": "重庆江北", "arrival": "上海虹桥", "scheduled": "2025-11-05T17:50:00" },
+      "flight": { "iata": "MU6430", "departure": "重庆江北", "arrival": "上海虹桥", "scheduled": "2025-11-05T17:50:00+08:00" },
       "status": "计划中",
       "baggage": "未托运"
     },
     {
-      "flight": { "iata": "MU5137", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-06T10:00:00" },
+      "flight": { "iata": "MU5137", "departure": "上海虹桥", "arrival": "北京首都", "scheduled": "2025-11-06T10:00:00+08:00" },
       "status": "取消",
       "baggage": "托运行李退回"
     },
     {
-      "flight": { "iata": "MU5138", "departure": "北京首都", "arrival": "上海虹桥", "scheduled": "2025-11-06T13:30:00" },
+      "flight": { "iata": "MU5138", "departure": "北京首都", "arrival": "上海虹桥", "scheduled": "2025-11-06T13:30:00+08:00" },
       "status": "取消",
       "baggage": "N/A"
     },
     {
-      "flight": { "iata": "FM9123", "departure": "上海浦东", "arrival": "新加坡樟宜", "scheduled": "2025-11-04T09:15:00" },
-      "status": "已起飞 (国际)",
+      "flight": { "iata": "FM9451", "departure": "上海浦东", "arrival": "重庆江北", "scheduled": "2025-11-04T09:15:00+08:00" },
+      "status": "已起飞 (原新加坡航班改为国内)",
       "baggage": "托运完成"
     },
     {
-      "flight": { "iata": "FM9124", "departure": "新加坡樟宜", "arrival": "上海浦东", "scheduled": "2025-11-04T17:30:00" },
-      "status": "计划中 (国际到达)",
+      "flight": { "iata": "FM9452", "departure": "重庆江北", "arrival": "上海浦东", "scheduled": "2025-11-04T17:30:00+08:00" },
+      "status": "计划中 (国内到达)",
       "baggage": "未托运"
     }
   ]
