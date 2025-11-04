@@ -1,52 +1,45 @@
-[
-  {"flightNumber":"MU1001","date":"2025-11-02","departureAirport":"上海浦东","arrivalAirport":"北京首都","departureTime":"07:30","arrivalTime":"09:50","status":"已到达","baggageCarousel":"A1"},
-  {"flightNumber":"FM1002","date":"2025-11-02","departureAirport":"北京首都","arrivalAirport":"上海虹桥","departureTime":"10:40","arrivalTime":"12:50","status":"已到达","baggageCarousel":"B3"},
-  {"flightNumber":"MU1003","date":"2025-11-02","departureAirport":"广州白云","arrivalAirport":"上海浦东","departureTime":"13:20","arrivalTime":"15:40","status":"已到达","baggageCarousel":"C2"},
-  {"flightNumber":"FM1004","date":"2025-11-02","departureAirport":"上海虹桥","arrivalAirport":"成都双流","departureTime":"16:10","arrivalTime":"18:30","status":"已到达","baggageCarousel":"D1"},
-  {"flightNumber":"MU1005","date":"2025-11-02","departureAirport":"成都双流","arrivalAirport":"上海浦东","departureTime":"19:20","arrivalTime":"21:40","status":"已到达","baggageCarousel":"E2"},
-  
-  {"flightNumber":"MU1011","date":"2025-11-03","departureAirport":"上海浦东","arrivalAirport":"深圳宝安","departureTime":"07:10","arrivalTime":"09:40","status":"已到达","baggageCarousel":"A3"},
-  {"flightNumber":"FM1012","date":"2025-11-03","departureAirport":"深圳宝安","arrivalAirport":"上海虹桥","departureTime":"10:30","arrivalTime":"13:00","status":"已到达","baggageCarousel":"B1"},
-  {"flightNumber":"MU1013","date":"2025-11-03","departureAirport":"上海浦东","arrivalAirport":"昆明长水","departureTime":"14:20","arrivalTime":"17:00","status":"已到达","baggageCarousel":"C3"},
-  {"flightNumber":"FM1014","date":"2025-11-03","departureAirport":"昆明长水","arrivalAirport":"上海虹桥","departureTime":"18:00","arrivalTime":"20:30","status":"已到达","baggageCarousel":"D4"},
-  {"flightNumber":"MU1015","date":"2025-11-03","departureAirport":"上海浦东","arrivalAirport":"青岛流亭","departureTime":"21:00","arrivalTime":"22:50","status":"已到达","baggageCarousel":"E5"},
-  
-  {"flightNumber":"MU1021","date":"2025-11-04","departureAirport":"上海虹桥","arrivalAirport":"北京首都","departureTime":"06:40","arrivalTime":"08:50","status":"已到达","baggageCarousel":"A2"},
-  {"flightNumber":"FM1022","date":"2025-11-04","departureAirport":"北京首都","arrivalAirport":"上海浦东","departureTime":"08:00","arrivalTime":"10:10","status":"已到达","baggageCarousel":"B2"},
-  {"flightNumber":"MU1023","date":"2025-11-04","departureAirport":"上海浦东","arrivalAirport":"西安咸阳","departureTime":"09:10","arrivalTime":"11:30","status":"已到达","baggageCarousel":"C1"},
-  {"flightNumber":"FM1024","date":"2025-11-04","departureAirport":"上海虹桥","arrivalAirport":"重庆江北","departureTime":"10:30","arrivalTime":"12:50","status":"计划中","baggageCarousel":"D3"},
-  {"flightNumber":"MU1025","date":"2025-11-04","departureAirport":"重庆江北","arrivalAirport":"上海浦东","departureTime":"11:00","arrivalTime":"13:20","status":"计划中","baggageCarousel":"E4"},
-  {"flightNumber":"FM1026","date":"2025-11-04","departureAirport":"上海浦东","arrivalAirport":"广州白云","departureTime":"12:10","arrivalTime":"14:40","status":"计划中","baggageCarousel":"F2"},
-  {"flightNumber":"MU1027","date":"2025-11-04","departureAirport":"广州白云","arrivalAirport":"上海虹桥","departureTime":"13:20","arrivalTime":"15:50","status":"计划中","baggageCarousel":"G3"},
-  {"flightNumber":"FM1028","date":"2025-11-04","departureAirport":"上海虹桥","arrivalAirport":"厦门高崎","departureTime":"14:30","arrivalTime":"16:40","status":"计划中","baggageCarousel":"H1"},
-  {"flightNumber":"MU1029","date":"2025-11-04","departureAirport":"厦门高崎","arrivalAirport":"上海浦东","departureTime":"17:00","arrivalTime":"19:20","status":"计划中","baggageCarousel":"I2"},
-  {"flightNumber":"FM1030","date":"2025-11-04","departureAirport":"上海浦东","arrivalAirport":"哈尔滨太平","departureTime":"20:00","arrivalTime":"22:40","status":"计划中","baggageCarousel":"J4"},
-  
-  {"flightNumber":"MU1031","date":"2025-11-05","departureAirport":"上海虹桥","arrivalAirport":"沈阳桃仙","departureTime":"07:00","arrivalTime":"09:10","status":"计划中","baggageCarousel":"A4"},
-  {"flightNumber":"FM1032","date":"2025-11-05","departureAirport":"沈阳桃仙","arrivalAirport":"上海浦东","departureTime":"09:40","arrivalTime":"11:50","status":"计划中","baggageCarousel":"B5"},
-  {"flightNumber":"MU1033","date":"2025-11-05","departureAirport":"上海浦东","arrivalAirport":"天津滨海","departureTime":"10:30","arrivalTime":"12:40","status":"计划中","baggageCarousel":"C4"},
-  {"flightNumber":"FM1034","date":"2025-11-05","departureAirport":"天津滨海","arrivalAirport":"上海虹桥","departureTime":"13:10","arrivalTime":"15:20","status":"计划中","baggageCarousel":"D5"},
-  {"flightNumber":"MU1035","date":"2025-11-05","departureAirport":"上海浦东","arrivalAirport":"长沙黄花","departureTime":"15:50","arrivalTime":"18:00","status":"计划中","baggageCarousel":"E3"},
-  {"flightNumber":"FM1036","date":"2025-11-05","departureAirport":"长沙黄花","arrivalAirport":"上海浦东","departureTime":"18:30","arrivalTime":"20:40","status":"计划中","baggageCarousel":"F5"},
-  
-  {"flightNumber":"MU1041","date":"2025-11-06","departureAirport":"上海虹桥","arrivalAirport":"南昌昌北","departureTime":"07:20","arrivalTime":"09:00","status":"计划中","baggageCarousel":"A5"},
-  {"flightNumber":"FM1042","date":"2025-11-06","departureAirport":"南昌昌北","arrivalAirport":"上海浦东","departureTime":"09:40","arrivalTime":"11:20","status":"计划中","baggageCarousel":"B4"},
-  {"flightNumber":"MU1043","date":"2025-11-06","departureAirport":"上海浦东","arrivalAirport":"武汉天河","departureTime":"12:10","arrivalTime":"14:00","status":"计划中","baggageCarousel":"C5"},
-  {"flightNumber":"FM1044","date":"2025-11-06","departureAirport":"武汉天河","arrivalAirport":"上海虹桥","departureTime":"14:40","arrivalTime":"16:30","status":"计划中","baggageCarousel":"D2"},
-  {"flightNumber":"MU1045","date":"2025-11-06","departureAirport":"上海浦东","arrivalAirport":"郑州新郑","departureTime":"17:00","arrivalTime":"18:50","status":"计划中","baggageCarousel":"E1"},
-  {"flightNumber":"FM1046","date":"2025-11-06","departureAirport":"郑州新郑","arrivalAirport":"上海浦东","departureTime":"19:20","arrivalTime":"21:10","status":"计划中","baggageCarousel":"F4"},
-  
-  {"flightNumber":"MU1051","date":"2025-11-07","departureAirport":"上海虹桥","arrivalAirport":"合肥新桥","departureTime":"07:10","arrivalTime":"08:30","status":"计划中","baggageCarousel":"A1"},
-  {"flightNumber":"FM1052","date":"2025-11-07","departureAirport":"合肥新桥","arrivalAirport":"上海浦东","departureTime":"09:10","arrivalTime":"10:30","status":"计划中","baggageCarousel":"B2"},
-  {"flightNumber":"MU1053","date":"2025-11-07","departureAirport":"上海浦东","arrivalAirport":"南宁吴圩","departureTime":"11:20","arrivalTime":"13:40","status":"计划中","baggageCarousel":"C3"},
-  {"flightNumber":"FM1054","date":"2025-11-07","departureAirport":"南宁吴圩","arrivalAirport":"上海虹桥","departureTime":"14:20","arrivalTime":"16:40","status":"计划中","baggageCarousel":"D4"},
-  {"flightNumber":"MU1055","date":"2025-11-07","departureAirport":"上海浦东","arrivalAirport":"三亚凤凰","departureTime":"17:30","arrivalTime":"20:00","status":"计划中","baggageCarousel":"E5"},
-  {"flightNumber":"FM1056","date":"2025-11-07","departureAirport":"三亚凤凰","arrivalAirport":"上海浦东","departureTime":"20:40","arrivalTime":"23:10","status":"计划中","baggageCarousel":"F1"},
-  
-  {"flightNumber":"MU1061","date":"2025-11-08","departureAirport":"上海虹桥","arrivalAirport":"厦门高崎","departureTime":"07:30","arrivalTime":"09:50","status":"计划中","baggageCarousel":"A3"},
-  {"flightNumber":"FM1062","date":"2025-11-08","departureAirport":"厦门高崎","arrivalAirport":"上海浦东","departureTime":"10:30","arrivalTime":"12:50","status":"计划中","baggageCarousel":"B5"},
-  {"flightNumber":"MU1063","date":"2025-11-08","departureAirport":"上海浦东","arrivalAirport":"北京首都","departureTime":"13:20","arrivalTime":"15:40","status":"计划中","baggageCarousel":"C2"},
-  {"flightNumber":"FM1064","date":"2025-11-08","departureAirport":"北京首都","arrivalAirport":"上海虹桥","departureTime":"16:10","arrivalTime":"18:30","status":"计划中","baggageCarousel":"D3"},
-  {"flightNumber":"MU1065","date":"2025-11-08","departureAirport":"上海浦东","arrivalAirport":"成都双流","departureTime":"19:00","arrivalTime":"21:20","status":"计划中","baggageCarousel":"E4"},
-  {"flightNumber":"FM1066","date":"2025-11-08","departureAirport":"成都双流","arrivalAirport":"上海浦东","departureTime":"21:50","arrivalTime":"23:50","status":"计划中","baggageCarousel":"F5"}
-]
+{
+  "data": [
+    {"flight": {"iata": "MU5120", "date": "2025-11-02", "departure": "上海浦东", "arrival": "北京首都", "scheduled": "07:30", "arrival_scheduled": "09:50"}, "status": "到达", "baggage": "已到达", "baggage_claim": "2号转盘"},
+    {"flight": {"iata": "FM5231", "date": "2025-11-02", "departure": "上海虹桥", "arrival": "广州白云", "scheduled": "08:15", "arrival_scheduled": "10:45"}, "status": "到达", "baggage": "已到达", "baggage_claim": "4号转盘"},
+    {"flight": {"iata": "MU5342", "date": "2025-11-02", "departure": "成都天府", "arrival": "上海浦东", "scheduled": "09:10", "arrival_scheduled": "11:55"}, "status": "到达", "baggage": "已到达", "baggage_claim": "3号转盘"},
+    {"flight": {"iata": "FM5453", "date": "2025-11-02", "departure": "上海虹桥", "arrival": "西安咸阳", "scheduled": "10:20", "arrival_scheduled": "12:35"}, "status": "到达", "baggage": "已到达", "baggage_claim": "1号转盘"},
+    {"flight": {"iata": "MU5564", "date": "2025-11-02", "departure": "昆明长水", "arrival": "上海虹桥", "scheduled": "13:00", "arrival_scheduled": "15:30"}, "status": "到达", "baggage": "已到达", "baggage_claim": "6号转盘"},
+
+    {"flight": {"iata": "FM5125", "date": "2025-11-03", "departure": "上海浦东", "arrival": "深圳宝安", "scheduled": "08:40", "arrival_scheduled": "11:00"}, "status": "到达", "baggage": "已到达", "baggage_claim": "5号转盘"},
+    {"flight": {"iata": "MU5236", "date": "2025-11-03", "departure": "重庆江北", "arrival": "上海虹桥", "scheduled": "09:10", "arrival_scheduled": "11:40"}, "status": "到达", "baggage": "已到达", "baggage_claim": "7号转盘"},
+    {"flight": {"iata": "FM5347", "date": "2025-11-03", "departure": "上海浦东", "arrival": "武汉天河", "scheduled": "12:00", "arrival_scheduled": "13:45"}, "status": "到达", "baggage": "已到达", "baggage_claim": "2号转盘"},
+    {"flight": {"iata": "MU5458", "date": "2025-11-03", "departure": "北京首都", "arrival": "上海虹桥", "scheduled": "14:15", "arrival_scheduled": "16:35"}, "status": "到达", "baggage": "已到达", "baggage_claim": "3号转盘"},
+    {"flight": {"iata": "FM5569", "date": "2025-11-03", "departure": "上海虹桥", "arrival": "成都天府", "scheduled": "17:30", "arrival_scheduled": "20:05"}, "status": "到达", "baggage": "已到达", "baggage_claim": "8号转盘"},
+
+    {"flight": {"iata": "MU5121", "date": "2025-11-04", "departure": "上海浦东", "arrival": "广州白云", "scheduled": "09:00", "arrival_scheduled": "11:25"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "4号转盘"},
+    {"flight": {"iata": "FM5232", "date": "2025-11-04", "departure": "广州白云", "arrival": "上海虹桥", "scheduled": "10:20", "arrival_scheduled": "12:45"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "6号转盘"},
+    {"flight": {"iata": "MU5343", "date": "2025-11-04", "departure": "上海浦东", "arrival": "昆明长水", "scheduled": "13:30", "arrival_scheduled": "16:10"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "7号转盘"},
+    {"flight": {"iata": "FM5454", "date": "2025-11-04", "departure": "西安咸阳", "arrival": "上海浦东", "scheduled": "15:20", "arrival_scheduled": "17:40"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "5号转盘"},
+    {"flight": {"iata": "MU5565", "date": "2025-11-04", "departure": "上海虹桥", "arrival": "重庆江北", "scheduled": "18:00", "arrival_scheduled": "20:25"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "1号转盘"},
+
+    {"flight": {"iata": "FM5126", "date": "2025-11-05", "departure": "上海浦东", "arrival": "北京首都", "scheduled": "07:45", "arrival_scheduled": "10:10"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "2号转盘"},
+    {"flight": {"iata": "MU5237", "date": "2025-11-05", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "09:10", "arrival_scheduled": "11:40"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "3号转盘"},
+    {"flight": {"iata": "FM5348", "date": "2025-11-05", "departure": "上海虹桥", "arrival": "西安咸阳", "scheduled": "11:00", "arrival_scheduled": "13:20"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "6号转盘"},
+    {"flight": {"iata": "MU5459", "date": "2025-11-05", "departure": "杭州萧山", "arrival": "上海浦东", "scheduled": "14:30", "arrival_scheduled": "15:20"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "4号转盘"},
+    {"flight": {"iata": "FM5570", "date": "2025-11-05", "departure": "上海虹桥", "arrival": "成都天府", "scheduled": "17:10", "arrival_scheduled": "19:50"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "5号转盘"},
+
+    {"flight": {"iata": "MU5127", "date": "2025-11-06", "departure": "上海浦东", "arrival": "昆明长水", "scheduled": "08:00", "arrival_scheduled": "10:40"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "2号转盘"},
+    {"flight": {"iata": "FM5238", "date": "2025-11-06", "departure": "重庆江北", "arrival": "上海虹桥", "scheduled": "09:30", "arrival_scheduled": "11:50"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "3号转盘"},
+    {"flight": {"iata": "MU5349", "date": "2025-11-06", "departure": "上海浦东", "arrival": "武汉天河", "scheduled": "12:15", "arrival_scheduled": "13:55"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "4号转盘"},
+    {"flight": {"iata": "FM5460", "date": "2025-11-06", "departure": "广州白云", "arrival": "上海浦东", "scheduled": "14:45", "arrival_scheduled": "17:10"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "5号转盘"},
+    {"flight": {"iata": "MU5571", "date": "2025-11-06", "departure": "上海虹桥", "arrival": "成都天府", "scheduled": "18:20", "arrival_scheduled": "20:55"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "6号转盘"},
+
+    {"flight": {"iata": "FM5128", "date": "2025-11-07", "departure": "上海浦东", "arrival": "北京首都", "scheduled": "07:10", "arrival_scheduled": "09:35"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "1号转盘"},
+    {"flight": {"iata": "MU5239", "date": "2025-11-07", "departure": "西安咸阳", "arrival": "上海虹桥", "scheduled": "09:45", "arrival_scheduled": "11:55"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "7号转盘"},
+    {"flight": {"iata": "FM5350", "date": "2025-11-07", "departure": "上海浦东", "arrival": "武汉天河", "scheduled": "12:00", "arrival_scheduled": "13:45"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "8号转盘"},
+    {"flight": {"iata": "MU5461", "date": "2025-11-07", "departure": "重庆江北", "arrival": "上海浦东", "scheduled": "14:10", "arrival_scheduled": "16:40"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "4号转盘"},
+    {"flight": {"iata": "FM5572", "date": "2025-11-07", "departure": "上海虹桥", "arrival": "昆明长水", "scheduled": "17:00", "arrival_scheduled": "19:45"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "5号转盘"},
+
+    {"flight": {"iata": "MU5129", "date": "2025-11-08", "departure": "上海浦东", "arrival": "广州白云", "scheduled": "08:25", "arrival_scheduled": "10:50"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "3号转盘"},
+    {"flight": {"iata": "FM5240", "date": "2025-11-08", "departure": "深圳宝安", "arrival": "上海虹桥", "scheduled": "10:00", "arrival_scheduled": "12:30"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "7号转盘"},
+    {"flight": {"iata": "MU5351", "date": "2025-11-08", "departure": "上海浦东", "arrival": "西安咸阳", "scheduled": "13:10", "arrival_scheduled": "15:20"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "2号转盘"},
+    {"flight": {"iata": "FM5462", "date": "2025-11-08", "departure": "北京首都", "arrival": "上海浦东", "scheduled": "15:40", "arrival_scheduled": "18:05"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "6号转盘"},
+    {"flight": {"iata": "MU5573", "date": "2025-11-08", "departure": "上海虹桥", "arrival": "成都天府", "scheduled": "19:20", "arrival_scheduled": "21:55"}, "status": "计划中", "baggage": "等待装载", "baggage_claim": "1号转盘"}
+  ]
+}
