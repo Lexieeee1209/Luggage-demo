@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>东航航班与行李动态查询</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- 引入二维码扫码库 -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- html5-qrcode -->
   <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
 </head>
 <body>
@@ -16,19 +16,23 @@
 
   <main>
     <section class="search-section">
-      <input type="text" id="flight-input" placeholder="请输入航班号 (如 MU5126 或 5126)">
-      <input type="date" id="date-input">
-      <button id="search-btn">查询</button>
-      <button id="scan-btn" class="scan-btn">📷 扫描登机牌二维码</button>
+      <input type="text" id="flight-input" placeholder="请输入航班号 (如 MU5126 或 5126)" />
+      <input type="date" id="date-input" />
+      <div class="btn-row">
+        <button id="search-btn" class="primary-btn">查询</button>
+        <button id="scan-btn" class="scan-btn">📷 扫描登机牌二维码</button>
+      </div>
     </section>
 
-    <div id="loading" class="loading" style="display: none;">查询中，请稍候...</div>
-    <div id="message" class="message"></div>
+    <div id="loading" class="loading" style="display:none;">查询中，请稍候...</div>
+    <div id="message" class="message" style="display:none;"></div>
 
     <!-- 扫码区域 -->
     <section id="scanner-section" class="scanner-section" style="display:none;">
-      <div id="reader" style="width:300px;margin:auto;"></div>
-      <button id="close-scan" class="close-scan">关闭扫码</button>
+      <div id="reader" style="width:320px;margin:16px auto;"></div>
+      <div style="text-align:center;">
+        <button id="close-scan" class="close-scan">关闭扫码</button>
+      </div>
     </section>
 
     <section id="result-section" class="result-section" style="display:none;">

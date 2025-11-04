@@ -1,165 +1,186 @@
 document.addEventListener("DOMContentLoaded", () => {
   const flightInput = document.getElementById("flight-input");
-  const dateInput = document.getElementById("date-input");
-  const searchBtn = document.getElementById("search-btn");
-  const flightInfo = document.getElementById("flight-info");
-  const baggageInfo = document.getElementById("baggage-info");
-  const resultSection = document.getElementById("result-section");
-  const loading = document.getElementById("loading");
+  const dateInput = document.getElementById("date-input");
+  const searchBtn = document.getElementById("search-btn");
+  const flightInfo = document.getElementById("flight-info");
+  const baggageInfo = document.getElementById("baggage-info");
+  const resultSection = document.getElementById("result-section");
+  const loading = document.getElementById("loading");
+  const messageBox = document.getElementById("message");
 
-  // --- 扫码相关元素 ---
-  const qrBtn = document.getElementById("scan-btn"); // 扫码按钮
-  const scannerSection = document.getElementById("scanner-section"); // 扫码区域
-  const closeScanBtn = document.getElementById("close-scan"); // 关闭扫码按钮
-  // --------------------
+  const scanBtn = document.getElementById("scan-btn");
+  const scannerSection = document.getElementById("scanner-section");
+  const closeScanBtn = document.getElementById("close-scan");
+  const readerElementId = "reader";
 
-  // 页面初始隐藏 loading 提示
-  loading.style.display = "none";
+  // 初始状态
+  loading.style.display = "none";
+  messageBox.style.display = "none";
+  resultSection.style.display = "none";
+  scannerSection.style.display = "none";
 
-  // --- 自动设置今天日期 ---
-  // 修复了日期输入框默认为空的问题
-  const today = new Date().toISOString().split('T')[0];
+  // 自动填今天日期，用户可修改
+  const today = new Date().toISOString().split("T")[0];
   dateInput.value = today;
-  // --------------------
 
-  // 更新时间显示
-  setInterval(() => {
-    const now = new Date();
-    document.getElementById("current-time").innerText = now.toLocaleString("zh-CN");
-  }, 1000);
+  // 时钟显示
+  setInterval(() => {
+    const now = new Date();
+    document.getElementById("current-time").innerText = now.toLocaleString("zh-CN");
+  }, 1000);
 
-  // 点击查询按钮事件
-  searchBtn.addEventListener("click", async () => {
-    const flightNumber = flightInput.value.trim().toUpperCase();
-    
-    // --- ⬇️ 【核心修改 1：获取并验证日期】 ⬇️ ---
-    const date = dateInput.value; // date会是 "2025-11-04" 这样的字符串
+  // 显示临时消息
+  function showMessage(text, timeout=3000) {
+    messageBox.style.display = "block";
+    messageBox.innerText = text;
+    if (timeout>0) {
+      setTimeout(()=> { messageBox.style.display = "none"; }, timeout);
+    }
+  }
 
-    if (!flightNumber) {
-      alert("请输入航班号");
-      return;
-    }
-    
-    // 验证日期
-    if (!date) {
-      alert("请输入日期");
+  // 主查询函数（按 航班号 + 日期 精确匹配）
+  async function queryFlight(flightNumber, dateStr) {
+    if (!flightNumber) {
+      showMessage("请输入航班号");
       return;
     }
-    // --- ⬆️ 核心修改 1 结束 ⬆️ ---
+    if (!dateStr) {
+      showMessage("请选择日期");
+      return;
+    }
 
-    loading.style.display = "block";
-    resultSection.style.display = "none";
+    loading.style.display = "block";
+    resultSection.style.display = "none";
 
-    try {
-      const res = await fetch("database.json");
-      const data = await res.json();
+    try {
+      const res = await fetch("database.json", {cache: "no-store"});
+      if (!res.ok) throw new Error("无法加载数据文件");
+      const json = await res.json();
+      // 标准化：输入可能是 "5126" 或 "MU5126"
+      const normInput = flightNumber.trim().toUpperCase();
 
-      // --- ⬇️ 【核心修改 2：同时匹配航班号和日期】 ⬇️ ---
-      let foundFlight = data.data.find(f => {
-        // 1. 匹配航班号 (你的原始逻辑)
-        const flightMatchesNumber = 
-            f.flight.iata === flightNumber ||
-            f.flight.iata.replace(/[A-Z]+/, "") === flightNumber;
-        
-        // 2. 匹配日期
-        // "f.flight.scheduled" 是 "2025-11-04T18:30:00"
-        // 我们要把它转换成 "2025-11-04" 来进行比较
-        const flightDate = new Date(f.flight.scheduled).toISOString().split('T')[0];
-        
-        // 3. 必须两者都为 true
-        return flightMatchesNumber && (flightDate === date);
+      const found = json.data.find(item => {
+        // 日期匹配：直接从 scheduled 字符串取日期部分（格式 "YYYY-MM-DD"）
+        const sched = item.flight.scheduled; // e.g. "2025-11-04T18:30:00+08:00"
+        const flightDate = sched.slice(0,10); // safe because JSON stores ISO-like string
+        // 航班号匹配：完整 iata 或去掉字母后匹配
+        const iata = item.flight.iata.toUpperCase();
+        const iataShort = iata.replace(/^[A-Z]+/, "");
+        const matchNumber = (iata === normInput) || (iataShort === normInput);
+        return matchNumber && (flightDate === dateStr);
       });
-      // --- ⬆️ 核心修改 2 结束 ⬆️ ---
 
-      loading.style.display = "none";
+      loading.style.display = "none";
 
-      if (foundFlight) {
-        resultSection.style.display = "block";
-
-        const depTime = new Date(foundFlight.flight.scheduled).toLocaleTimeString("zh-CN", {
-          hour: "2-digit",
-          minute: "2-digit"
-        });
-        
-        // --- ⬇️ 【完整代码 1：你省略的部分】 ⬇️ ---
-        flightInfo.innerHTML = `
-          <p><strong>航班号：</strong>${foundFlight.flight.iata}</p>
-          <p><strong>出发地：</strong>${foundFlight.flight.departure}</p>
-          <p><strong>目的地：</strong>${foundFlight.flight.arrival}</p>
-          <p><strong>计划时间：</strong>${depTime}</p>
-          <p><strong>航班状态：</strong>${foundFlight.status}</p>
-        `;
-
-        baggageInfo.innerHTML = `
-          <p><strong>行李状态：</strong>${foundFlight.baggage}</p>
-        `;
-        // --- ⬆️ 完整代码 1 结束 ⬆️ ---
-
-      } else {
-        alert("未找到该日期下的相关航班，请确认航班号或日期是否正确。");
-      }
-    } catch (error) {
-      loading.style.display = "none";
-      alert("数据加载失败，请检查 database.json 文件是否存在。");
-      console.error(error);
-    }
-  });
-
-  // --- ⬇️ 【核心修改 3：替换为“真实扫码”逻辑】 ⬇️ ---
-
-  // 1. 初始化扫码器对象
-  const html5QrCode = new Html5Qrcode("reader");
-
-  // 2. 当用户点击“扫码”按钮时
-  qrBtn.addEventListener("click", () => {
-    // (1) 把扫码区域显示出来
-    scannerSection.style.display = "block";
-    // (2) 请求打开摄像头
-    html5QrCode.start(
-      { facingMode: "environment" }, // 优先使用后置摄像头
-      {
-        fps: 10, // 扫描帧率
-        qrbox: { width: 250, height: 250 } // 扫描框的大小
-      },
-      onScanSuccess, // 扫描成功时，调用这个函数
-      onScanFailure  // 扫描失败时，调用这个函数
-    ).catch(err => {
-      alert(`无法启动摄像头，请确认已授权，并使用 https 访问：${err}`);
-    });
-  });
-
-  // 3. 当扫描成功时
-  function onScanSuccess(decodedText, decodedResult) {
-    // decodedText 就是二维码里的文字 (比如 "MU5126")
-    
-    // (1) 把文字填入输入框
-    flightInput.value = decodedText;
-    
-    // (2) 停止摄像头并隐藏扫码区
-    stopScanning();
-    
-    // (3) (可选) 自动点击“查询”按钮
-    // searchBtn.click(); // 建议：先不自动点击，让用户自己点查询
+      if (found) {
+        resultSection.style.display = "block";
+        // 使用 scheduled 的本地时间显示起飞时间/到达时间（取时分）
+        const depTime = new Date(found.flight.scheduled).toLocaleTimeString("zh-CN", {hour:"2-digit", minute:"2-digit"});
+        const arrTime = new Date(found.flight.arrival_scheduled ? found.flight.arrival_scheduled : found.flight.scheduled).toLocaleTimeString("zh-CN", {hour:"2-digit", minute:"2-digit"});
+        flightInfo.innerHTML = `
+          <p><strong>航班号：</strong>${found.flight.iata}</p>
+          <p><strong>出发地：</strong>${found.flight.departure}</p>
+          <p><strong>目的地：</strong>${found.flight.arrival}</p>
+          <p><strong>计划起飞时间：</strong>${depTime}</p>
+          <p><strong>计划到达时间：</strong>${arrTime}</p>
+          <p><strong>航班状态：</strong>${found.status}</p>
+        `;
+        baggageInfo.innerHTML = `
+          <p><strong>行李状态：</strong>${found.baggage}</p>
+        `;
+      } else {
+        showMessage("未找到该日期下的相关航班，请确认航班号或日期是否正确。", 4000);
+      }
+    } catch (err) {
+      loading.style.display = "none";
+      console.error(err);
+      showMessage("数据加载失败，请检查 database.json 是否存在或网络连接。", 5000);
+    }
   }
 
-  // 4. 当扫描失败时 (比如没对准，这个会一直触发)
-  function onScanFailure(error) {
-    // 我们可以选择什么都不做，让用户继续尝试
-  }
-
-  // 5. 当用户点击“关闭扫码”按钮时
-  closeScanBtn.addEventListener("click", () => {
-    stopScanning();
+  // 绑定查询事件（按钮与回车）
+  searchBtn.addEventListener("click", () => {
+    const f = flightInput.value.trim().toUpperCase();
+    const d = dateInput.value;
+    queryFlight(f, d);
+  });
+  flightInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      const f = flightInput.value.trim().toUpperCase();
+      const d = dateInput.value;
+      queryFlight(f, d);
+    }
   });
 
-  // 6. 封装一个“停止扫描”的函数
-  function stopScanning() {
-    html5QrCode.stop().then(ignore => {
-      // 摄像头已停止
-      scannerSection.style.display = "none"; // 隐藏扫码区域
+  // ========== 扫码部分（使用 html5-qrcode） ==========
+  // We'll create Html5Qrcode instance when user clicks scan
+  let html5QrCode = null;
+  let scanning = false;
+
+  function startScanner() {
+    if (scanning) return;
+    // show scanner UI
+    scannerSection.style.display = "block";
+    // create instance
+    html5QrCode = new Html5Qrcode(readerElementId, { verbose: false });
+    const config = { fps: 10, qrbox: 250 };
+
+    html5QrCode.start(
+      { facingMode: "environment" },
+      config,
+      (decodedText, decodedResult) => {
+        // on success
+        flightInput.value = decodedText.trim();
+        showMessage("已识别二维码：" + decodedText, 2000);
+        stopScanner();
+        // do NOT auto query by default; user can press 查询
+        // if you prefer auto query: uncomment next line:
+        // queryFlight(decodedText.trim().toUpperCase(), dateInput.value);
+      },
+      (errorMessage) => {
+        // scan failure; ignore
+      }
+    ).then(() => {
+      scanning = true;
     }).catch(err => {
-      // 停止失败 (一般不会)
+      // cannot start camera
+      scannerSection.style.display = "none";
+      console.error("无法启动摄像头：", err);
+      showMessage("无法启动摄像头，请确认已授权并在 HTTPS 环境下访问。", 5000);
     });
   }
-  // --- ⬆️ 核心修改 3 结束 ⬆️ ---
+
+  function stopScanner() {
+    if (!html5QrCode) {
+      scannerSection.style.display = "none";
+      scanning = false;
+      return;
+    }
+    html5QrCode.stop().then(() => {
+      html5QrCode.clear();
+      scannerSection.style.display = "none";
+      scanning = false;
+      html5QrCode = null;
+    }).catch(err => {
+      console.warn("停止摄像头失败：", err);
+      scannerSection.style.display = "none";
+      scanning = false;
+      html5QrCode = null;
+    });
+  }
+
+  scanBtn.addEventListener("click", () => {
+    startScanner();
+  });
+
+  closeScanBtn.addEventListener("click", () => {
+    stopScanner();
+  });
+
+  // 停止扫描并清理（离开页面时）
+  window.addEventListener("beforeunload", () => {
+    if (scanning && html5QrCode) {
+      try { html5QrCode.stop(); } catch(e) {}
+    }
+  });
 });
